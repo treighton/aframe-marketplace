@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <meta name="description" content="test">
+    <script src="./dist/main.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossorigin="anonymous">
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous">
+        <a-asset-item id="shop" src="./assets/GoodMPublic.gltf"></a-asset-item>
+      </a-assets>
+      <a-entity 
+        position="-9.914 0.5 -10.88587" 
+        rotation="0 -44.22 0" 
+        scale="0.5 0.5 0.5"
+        gltf-model="#shop">
+      </a-entity>
+      <a-entity 
+        position="8 0.5 -17" 
+        rotation="0 -96.2047704226214 0" 
+        scale="0.5 0.5 0.5" 
+        gltf-model="#shop">
+      </a-entity>
+
+      <!--Tracked controls. -->
+      <a-entity hand-controls="hand: left"></a-entity>
+      <a-entity hand-controls="hand: right"></a-entity>
+
+        <!-- Out of the box environment! -->
+      <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+    </a-scene>
+  </body>
+</html>
