@@ -1,1 +1,1 @@
-# POC VR Marketplace
+# POC Metaverse Marketplace
